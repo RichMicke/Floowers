@@ -127,7 +127,7 @@ header .fa-bars{
 }
 
 .home .content span{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color:var(--punk);
     padding: 1rem 0;
     line-height: 1.5;
@@ -139,6 +139,86 @@ header .fa-bars{
     color:var(#999);
     padding: 1rem 0;
     line-height: 1.5;
+}
+
+
+/*   about seccion the stlyes  */
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 2rem;
+}
+
+
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5em solid #fff ;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0,.1);     
+    height:  100;
+    object-fit: cover;
+
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background: #333;
+    width: 100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+
+
+.about .row .content{
+
+    flex:1 1 40rem;
+
+
+}
+
+
+.about .row .content h3{
+    font-size: 2rem;
+    color:var(--punk);
+}
+
+.about .row .content p{
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+
+
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: rgba(243, 205, 224, 0.95);
+}
+
+.heading span{
+    color: var(--punk);
+
 }
 
 
@@ -154,10 +234,14 @@ header .fa-bars{
 }
 
 
+/*  about secciont ends      */
+
 .btn:hover{
     background:var(--punk);
 
 }
+
+
 
 
 
@@ -245,6 +329,11 @@ header .fa-bars{
 
         font-size: 55%;
     
+   }
+
+   .heading{
+    font-size: 3rem;
+
    }
 
 }
