@@ -338,6 +338,62 @@ header .fa-bars{
 }
 
 /*  about secciont ends      */
+
+
+
+
+/*   concat seccion     */
+
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2rem;
+    box-shadow: 0 .2rem .5rem rgb(0, 0, 0, .1);
+    border: .3rem solid rgb(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .row .image {
+    flex: 1 1 30rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+    height: auto;
+}
+
+.contact .row form .box{
+    padding:1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border:.5rem solid rgb(0, 0, 0, .1);
+    border-radius: .2rem;
+    margin:.2rem;
+    width: 100%;
+}
+
+
+.contact .row form .box:focus{
+    border-color: var(--punk);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+
+
+
 .btn:hover{
     background:var(--punk);
 
