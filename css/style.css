@@ -200,18 +200,13 @@ header .fa-bars{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*        *          */
+/*       ***         */
+/*      *****        */
+/*     ********      */
+/*    ***********    */
+/*        ||         */
+       
 
 
 /*   icons seccion the stlyes  */
@@ -346,67 +341,97 @@ header .fa-bars{
 /*  Seccion products ends */
 
 /*  Style review star */
+.review {
+    padding: 2rem;
+    background: #f5f5f5;
+}
 
-.review .box-container{
+.review .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.review .box-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Evitar que se envuelvan las cajas */
     gap: 1.5rem;
+    justify-content: center; /* Centrar horizontalmente */
+    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
 }
 
-.review .box-container .box{
-    flex: 1 1 30rem;
-    box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0, .1) ;
-    border-radius: .5rem;
-    padding:3rem 2rem;
+.review .box {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    flex: 0 0 30rem; /* Fijar el tamaño de cada caja */
+    max-width: 30rem;
+    height: 30rem; /* Asegura que las cajas sean cuadradas */
     position: relative;
-    border:.1rem solid rgb(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.review .box-container .box .fa-quote-right{
-    position: absolute;
-    bottom:3rem; right:3rem;
-    font-size: 6rem;
-    color: #eee;
+.review .stars {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.review .box-container .box .stars i{
-   color: var(--pink);
-   font-size: 2rem;  
+.review .stars i {
+    color: var(--punk);
 }
 
-.review .box-container .box p{
-    color: #333;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    padding-top: 2rem;  
- }
+.review p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Permitir que el párrafo crezca */
+}
 
-.review .box-container .box .user{
+.review .user {
     display: flex;
     align-items: center;
-    padding-top: 2rem;
+    gap: 1rem;
+    margin-top: auto; 
 }
 
-.review .box-container .box .user img{
-    height: 6rem;
-    width: 6rem;
+.review .user img {
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    object-fit: cover;
-    margin-right: 1rem;    
 }
 
-.review .box-container .box .user h3{
-    font-size: 1.5rem;
-    color: #999;
-}
-
-.review .box-container .box .user span{
+.review .user-info h3 {
     font-size: 1.5rem;
     color: #333;
 }
+
+.review .user-info span {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+.review .fas.fa-quote-right {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: #f5f5f5;
+}
+
+
+
 
 
 /*  Style review ends */
+
+
+
+
+
 
 .heading {
     text-align: center;
