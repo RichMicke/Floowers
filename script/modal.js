@@ -1,5 +1,5 @@
 
-// start click modal imagen seccion
+// starts click modal imagen seccion
 
 
 document.addEventListener('DOMContentLoaded', () => {
