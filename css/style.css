@@ -518,7 +518,7 @@ header .fa-bars{
 .contact .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 2.5rem;
     align-items: center;
 }
 
@@ -542,7 +542,7 @@ header .fa-bars{
 
 .contact .row form .box{
     padding:1rem;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: #333;
     text-transform: none;
     border:.5rem solid rgb(0, 0, 0, .1);
