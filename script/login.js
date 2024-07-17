@@ -16,6 +16,13 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         return;
     }
 
+
+
+    const passwordRegex = /^(?=.*[A-Z]).{8,}$/;
+    if(!passwordRegex.test(password)){
+        alert('Password must be at least 8 characters long and contain at least one uppercarse letter.');
+        return;
+    }
    
 
 
