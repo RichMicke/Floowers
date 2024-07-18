@@ -565,6 +565,176 @@ header .fa-bars{
 /*   contac secions ends  */
 
 
+/* login seccions start */
+
+
+
+
+.login{
+
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://www.hdwallpapers.in/download/white_flower_4k_8k_hd-5120x2880.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.logoss{
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+
+.login .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.login .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2rem;
+    box-shadow: 0 .2rem .5rem rgb(0, 0, 0, .1);
+    border: .3rem solid rgb(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.login .row .image {
+    flex: 1 1 30rem;
+}
+
+.login .row .image img {
+    width: 100%;
+    height: auto;
+}
+
+.login .row form .box{
+    padding:1rem;
+    font-size: 1.9rem;
+    color: #333;
+    text-transform: none;
+    border:.5rem solid rgb(0, 0, 0, .1);
+    border-radius: .2rem;
+    margin:.2rem;
+    width: 100%;
+}
+
+
+.login .row form .box:focus{
+    border-color: var(--punk);
+}
+
+.login .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.login .row form a{
+    font-size: 1.2rem;
+}
+
+
+
+
+/*   login seccion end */
+
+
+
+
+
+
+/*  Register seccion start */
+
+
+
+
+
+.register{
+
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://www.hdwallpapers.in/download/white_flower_4k_8k_hd-5120x2880.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.register{
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+.register .row {
+    display: flex;
+    justify-content: wrap;
+    align-items: center;
+}
+
+.register .row form {
+    flex: 1 1 40rem;
+    padding: 4rem 4rem;
+    box-shadow: 0 .2rem .5rem rgb(0, 0, 0, .1);
+    border: center .3rem solid rgb(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .6rem;
+}
+
+
+.register .row .image {
+    flex: 1 1 30rem;
+}
+
+.register .row .image img {
+    width: 100%;
+    height: auto;
+}
+
+.register .row form .box{
+    padding:1rem;
+    font-size: 1.9rem;
+    color: #333;
+    text-transform: none;
+    border:.5rem solid rgb(0, 0, 0, .1);
+    border-radius: .2rem;
+    margin:.2rem;
+    width: 100%;
+}
+
+
+.register .row form .box:focus{
+    border-color: var(--punk);
+}
+
+.register .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+
+.register .row form a{
+    font-size: 1.2rem;
+
+}
+
+
+/* Register seccion end */
+
+
+
+
 
 /*  footer secion start  */
 
@@ -604,6 +774,14 @@ header .fa-bars{
 /*    footer finish   */
 
 
+
+ /* logo seccion  start */
+.logoss h1{
+    font-size: 30px;
+    color: var(--punk);
+}
+
+/* logo seccion finish * /
 
 
 /* map container start */
