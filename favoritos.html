@@ -3,17 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>Favoritos</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/logoa.png" type="image/x-icon">
+
+  <!-- font awesome cdn link -->
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!--custom css file link f-->
+  <link rel= "stylesheet" href="css/style.css">
+
+
 </head>
 <body>
   <header>
-    <h1>Mis Favoritos</h1>
+  
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+  
+  
+    <a href="#" class="logo"> Flowers <samp> <img src="img/logoa.png" width="30px" height="auto"></samp></a>
+    
+    
+    <nav class=" navbar">
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+      <a href="index.html">products</a>
+      <a href="index.html">review</a>
+      <a href="index.html">contact</a>
+    </nav>
+  
+    <div class="icons">
+      <button id="heart-icon" class="fas fa-heart" aria-label="favorites"></button>
+      <button id="cart-icon" class="fas fa-shopping-cart" aria-label="cart"></button>
+      <a href="login.html" class="fas fa-user"></a>
+  
+    </div>
+  
+
+    
   </header>
 
   <section id="favorites">
 
   </section>
+
+
+  <section>
+
+    <div class="favorit">
+
+      <h1> This your Favoritis</h1>
+
+    </div>
+
+
+
+  </section>
+
+
+
+
 
   <script defer src="favorites.js"></script>
 </body>

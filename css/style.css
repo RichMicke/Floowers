@@ -498,6 +498,24 @@ header .fa-bars{
 
 
 
+
+/*   Favorite seccion start  */
+
+
+.favorit h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--punk);
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+
+
+
+
+/* Favorite Seccion ends */
+
 .heading {
     text-align: center;
     font-size: 1.5rem;
