@@ -180,11 +180,7 @@ header .fa-bars{
 
 }
 
-
-
-
 /*   Miguel Customeres  */
-
 
 .customers h3{
     font-size: 4rem;
@@ -334,13 +330,37 @@ header .fa-bars{
   
   .products .box .content .price span {
     font-size: 1rem;
-    color: #999;
+    color: #fff;
     font-weight: normal;
     text-decoration: line-through;
   }
 
-
-
+  .favorites-btn, .cart-btn {
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    padding: .5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favorites-btn {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 1.5rem;
+  }
+  
+  .favorites-btn:hover, .cart-btn:hover {
+    background-color: #333;
+  }
+  
+  .favorites-btn::before {
+    content: "\f004";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+  }
   
 /*  Seccion products ends */
 
@@ -385,10 +405,6 @@ header .fa-bars{
 
   /* ... */
   
-
-
-
-
 /*  Style review star */
 .review {
     padding: 2rem;

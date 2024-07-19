@@ -28,51 +28,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // start btn click imagen
 
-  heartElements.forEach((el, index) => {
-      el.id = `heart-${index + 1}`;
+document.addEventListener("DOMContentLoaded", function() {
+  const favoriteItems = JSON.parse(localStorage.getItem('favorites')) || [];
+  const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+  document.querySelectorAll('.fas.fa-heart').forEach(function(heartButton) {
+    heartButton.addEventListener('click', function(event) {
+      event.preventDefault();
+      const product = getProductInfo(event.target); 
+      if (heartButton.classList.contains('liked')) {
+        heartButton.classList.remove('liked');
+        heartButton.style.color = '#333'; 
+        removeFavorite(product);
+      } else {
+        heartButton.classList.add('liked');
+        heartButton.style.color = 'red'; 
+        addFavorite(product);
+      }
+    });
   });
 
-  cartBtnElements.forEach((el, index) => {
-      el.id = `cart-btn-${index + 1}`;
+  function getProductInfo(element) {
+    const productElement = element.closest('.box');
+    return {
+      id: productElement.dataset.productId,
+      title: productElement.querySelector('h3').innerText,
+      price: productElement.querySelector('.price').innerText,
+      image: productElement.querySelector('img').src
+    };
+  }
+
+  function addFavorite(product) {
+    favoriteItems.push(product);
+    localStorage.setItem('favorites', JSON.stringify(favoriteItems));
+  }
+
+  function removeFavorite(product) {
+    const index = favoriteItems.findIndex(item => item.id === product.id);
+    if (index !== -1) {
+      favoriteItems.splice(index, 1);
+      localStorage.setItem('favorites', JSON.stringify(favoriteItems));
+    }
+  }
+
+  document.getElementById('heart-icon').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.href = 'favoritos.html';
   });
 
-  heartElements.forEach(el => {
-      el.addEventListener('click', (event) => {
-          event.preventDefault();
-          updateFavorites(el.id);
-      });
+  document.getElementById('cart-icon').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.href = 'cart.html';
   });
+});
 
-  cartBtnElements.forEach(el => {
-      el.addEventListener('click', (event) => {
-          event.preventDefault();
-          updateCart(el.id);
-      });
-  });
-
-  function toggleCart() {
-      const containerCartProducts = document.querySelector('.container-cart-products');
-      containerCartProducts.classList.toggle('hidden-cart');
-  }
-
-  function toggleFavorites() {
-      const containerFavorites = document.querySelector('.container-favorites');
-      containerFavorites.classList.toggle('hidden-cart');
-  }
-
-  function updateFavorites(itemId) {
-      const favoritesCount = document.getElementById('favorites-count');
-      let count = parseInt(favoritesCount.textContent);
-      favoritesCount.textContent = count + 1;
-      toggleFavorites();
-  }
-
-  function updateCart(itemId) {
-      const cartCount = document.getElementById('cart-count');
-      let count = parseInt(cartCount.textContent);
-      cartCount.textContent = count + 1;
-      toggleCart();
-  }
 // end btn click imagen 
 
 
